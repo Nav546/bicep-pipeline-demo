@@ -4,7 +4,7 @@
 
 param location string = resourceGroup().location
 param storageAccountNamePrefix string = 'demostor'
-param skuName string = 'Standard_GRS'
+param skuName string = 'Standard_LRS'
 
 // Generates a unique name so re-running this doesn't clash with an existing storage account
 var storageAccountName = '${storageAccountNamePrefix}${uniqueString(resourceGroup().id)}'
