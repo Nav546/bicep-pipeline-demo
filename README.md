@@ -6,8 +6,11 @@ turn into an automated real-world workflow.
 ## What's in here
 
 - `main.bicep` - the template. This is the same idea as your az104-disk5.bicep
-  file, just deploying a Storage Account instead of a Managed Disk. This is the
-  single source of truth for what gets built in Azure.
+  file, just deploying Azure resources instead of doing it manually. This is
+  the single source of truth for what gets built in Azure. It currently
+  deploys:
+  - A Storage Account (StorageV2, TLS 1.2 minimum, public blob access disabled)
+  - A Virtual Network with one subnet (10.0.0.0/16, with a 10.0.1.0/24 subnet)
 
 - `.github/workflows/deploy.yml` - the pipeline. This is a GitHub Actions
   workflow. Instead of you typing `az deployment group create` yourself like
