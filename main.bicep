@@ -51,9 +51,6 @@ output storageAccountId string = storageAccount.id
 output vnetName string = vnet.name
 output vnetId string = vnet.id
 
-@description('Location for all resources')
-param location string = resourceGroup().location
-
 // ------------------------------------------------------------
 // Task 1 & 2: CoreServicesVnet + ManufacturingVnet with subnets
 // ------------------------------------------------------------
@@ -163,4 +160,3 @@ resource sensorNsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
     ]
   }
 }
-
