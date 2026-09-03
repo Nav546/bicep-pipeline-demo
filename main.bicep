@@ -51,14 +51,6 @@ output storageAccountId string = storageAccount.id
 output vnetName string = vnet.name
 output vnetId string = vnet.id
 
-
-
-// ============================================================
-// Lab 04 - Implement Virtual Networking
-// Add these resources alongside your existing storage account
-// and VNet resources in main.bicep
-// ============================================================
-
 @description('Location for all resources')
 param location string = resourceGroup().location
 
