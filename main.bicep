@@ -160,3 +160,6 @@ resource sensorNsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
     ]
   }
 }
+
+
+// demo video trigger
